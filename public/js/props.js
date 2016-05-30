@@ -3,8 +3,8 @@
 
 var path = require('path'),
   mongoose = require('mongoose'),
-  Prop = mongoose.model('Prop'),
-  _ = require('lodash');
+  _ = require('lodash'),
+ Prop = mongoose.model('Prop');
 
 exports.create = function(req, res) {
   var prop = new Prop(req.body);
@@ -55,9 +55,10 @@ exports.delete = function(req, res) {
       if (err) {
         return res.status(400).send('err');
       } else {
-
-    })
-  }
+        res.jsonp(prop);
+    }
+  });
+};
 
 
   exports.propByID = function(req, res, next, id) {

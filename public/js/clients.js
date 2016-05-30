@@ -3,8 +3,8 @@
 
 var path = require('path'),
   mongoose = require('mongoose'),
-  Client = mongoose.model('Client'),
-  _ = require('lodash');
+  _ = require('lodash'),
+ Client = mongoose.model('Client');
 
 exports.create = function(req, res) {
   var client = new Client(req.body);
@@ -44,7 +44,7 @@ exports.delete = function(req, res) {
     if (err) {
       return res.status(400).send('err');
     } else {
-      res.jsonp(client)
+      res.jsonp(client);
     }
   })
   };
@@ -55,8 +55,9 @@ exports.delete = function(req, res) {
       if (err) {
         return res.status(400).send('err');
       } else {
-
-    })
+        res.jsonp(client);
+    }
+  });
   }
 
 

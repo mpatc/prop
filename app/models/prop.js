@@ -1,12 +1,13 @@
 'use strict';
 
 var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+    Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId;
 
-module.exports = mongoose.model('Prop',
 
 var PropSchema = new Schema({
   name: {type: String, default: '', trim: true},
+  address: {type: String, default: '', trim: true},
   email: {type: String, default: '', trim: true},
   phone: {type: String, default: '', trim: true},
   created: {type: Date, default: Date.now},
@@ -14,4 +15,4 @@ var PropSchema = new Schema({
   client: {type: Schema.ObjectId, ref:'Client'}
 });
 
-mongoose.model('Prop', PropSchema);
+module.exports = mongoose.model('Prop', PropSchema);

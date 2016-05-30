@@ -2,5 +2,5 @@
 
 
 module.exports = {
-    url : 'mongodb://localhost/property'
+    url : 'mongodb://localhost/intro'
 }
