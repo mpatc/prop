@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-module.exports = mongoose.model('Client', {
+module.exports = mongoose.model('Prop', {
   address: {type: String, default: '', trim: true},
   occupied: {type: Boolean, default: false},
   price: {type: Number, default: 0},
