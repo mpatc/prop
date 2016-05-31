@@ -1,4 +1,4 @@
-'use strict';
+
 
 angular.module('MainCtrl', []).controller('MainController', function($scope) {
 

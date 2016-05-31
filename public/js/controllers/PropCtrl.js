@@ -1,4 +1,4 @@
-'use strict'
+
 
 angular.module('PropCtrl', []).controller('PropController', function($scope) {
 
