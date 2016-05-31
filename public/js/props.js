@@ -72,7 +72,7 @@ exports.delete = function(req, res) {
     Prop.findById(id).populate('client', 'name').exec(function (err, prop) {
       if (err) {
         return next(err);
-      } else if (!listing) {
+      } else if (!prop) {
         return res.status(404).send({
           message: 'No prop with that identifier has been found'
         });

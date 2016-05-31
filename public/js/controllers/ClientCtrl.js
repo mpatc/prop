@@ -79,7 +79,7 @@ angular.module('ClientCtrl', []).controller('ClientController', function($scope)
 //     Client.findById(id).populate('prop', 'address').exec(function (err, client) {
 //       if (err) {
 //         return next(err);
-//       } else if (!listing) {
+//       } else if (!client) {
 //         return res.status(404).send({
 //           message: 'No client with that identifier has been found'
 //         });
