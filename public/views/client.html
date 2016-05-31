@@ -7,53 +7,50 @@
 </div>
 <form>
   <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
+    <label for="clientName" class="col-sm-2 form-control-label">Name</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+      <input type="name" class="form-control" id="clientName" placeholder="Name">
     </div>
   </div>
   <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 form-control-label">Password</label>
+    <label for="clientEmail" class="col-sm-2 form-control-label">Email</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      <input type="email" class="form-control" id="clientEmail" placeholder="Email">
     </div>
   </div>
   <div class="form-group row">
-    <label class="col-sm-2">Radios</label>
+    <label for="clientPhone" class="col-sm-2 form-control-label">Phone</label>
     <div class="col-sm-10">
-      <div class="radio">
-        <label>
-          <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          Option one is this and that&mdash;be sure to include why it's great
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          Option two can be something else and selecting it will deselect option one
-        </label>
-      </div>
-      <div class="radio disabled">
-        <label>
-          <input type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-          Option three is disabled
-        </label>
-      </div>
+      <input type="text" class="form-control" id="clientPhone" placeholder="Phone">
     </div>
   </div>
   <div class="form-group row">
-    <label class="col-sm-2">Checkbox</label>
+    <label for="clientOther" class="col-sm-2 form-control-label">Other</label>
     <div class="col-sm-10">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Check me out
-        </label>
-      </div>
+      <input type="text" rows="3" class="form-control" id="clientOther" placeholder="Other">
     </div>
   </div>
+
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="selecttenent">Is he/she not Homeless?</label>
+    <div class="col-md-4">
+      <div class="input-group">
+  <span class="input-group-addon">
+      <input type="checkbox">
+  </span>
+      <select id="selecttenent" name="selecttenent" class="form-control">
+        <option value="1">123 main st</option>
+        <option value="2">456 any street</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+
   <div class="form-group row">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-secondary">Sign in</button>
+      <button type="submit" class="btn btn-secondary">Submit Client</button>
     </div>
   </div>
 </form>
