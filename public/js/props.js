@@ -51,7 +51,7 @@ exports.delete = function(req, res) {
 
 
   exports.list = function(req, res) {
-    Prop.find().sort('-created').popluate('client', 'name').exec(function(err, prop){
+    Prop.find().sort('-created').populate('client', 'name').exec(function(err, prop){
       if (err) {
         return res.status(400).send('err');
       } else {

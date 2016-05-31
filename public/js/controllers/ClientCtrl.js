@@ -58,7 +58,7 @@ angular.module('ClientCtrl', []).controller('ClientController', function($scope)
 //
 //
 //   exports.list = function(req, res) {
-//     Client.find().sort('-created').popluate('prop', 'address').exec(function(err, client){
+//     Client.find().sort('-created').populate('prop', 'address').exec(function(err, client){
 //       if (err) {
 //         return res.status(400).send('err');
 //       } else {
