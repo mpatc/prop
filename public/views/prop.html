@@ -20,33 +20,34 @@
   <div class="form-group row">
     <label for="rent" class="col-sm-2 form-control-label">Rent</label>
     <div class="col-sm-10"><div class="input-group">
-      <span class="input-group-addon">$</span>
+      <span class="input-group-addon">¢</span>
       <input type="number" min="0" step="1" class="form-control" id="inputRent" placeholder="Rent">
-      <span class="input-group-addon">.00</span>
     </div></div>
   </div>
   <div class="form-group row">
     <label for="util" class="col-sm-2 form-control-label">Util</label>
     <div class="col-sm-10"><div class="input-group">
-      <span class="input-group-addon">$</span>
+      <span class="input-group-addon">¢</span>
       <input type="number" min="0" step="1" class="form-control" id="inputUtil" placeholder="Util">
-      <span class="input-group-addon">.00</span>
     </div></div>
   </div>
   <div class="form-group">
-    <label class="col-md-4 control-label" for="selecttenent">Is it occupied?</label>
+    <label class="col-md-1 control-label" for="selecttenent">
+      Is it Occupied?
+    </label>  <input id="selecttenent" ng-model="selecttenent" type="checkbox">
+  </div>
+
+  <div ng-show="selecttenent" class="form-group">
+    <label class="col-md-4 control-label" for="selecttenent1">Who lives there?</label>
     <div class="col-md-4">
-      <div class="input-group">
-  <span class="input-group-addon">
-      <input type="checkbox">
-  </span>
-      <select id="selecttenent" name="selecttenent" class="form-control">
+      <select id="selecttenent1" name="selecttenent1" class="form-control">
         <option value="1">Bill</option>
         <option value="2">Jack</option>
       </select>
     </div>
   </div>
 </div>
+
 
 
   <div class="form-group row">

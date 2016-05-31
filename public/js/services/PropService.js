@@ -9,7 +9,7 @@ angular.module('PropService', []).factory('Prop', ['$http', function($http) {
 
                 // these will work when more API routes are defined on the Node side of things
         // call to POST and create a new nerd
-        create : function(nerdData) {
+        create : function(propData) {
             return $http.post('/api/props', propData);
         },
 

@@ -9,7 +9,7 @@ angular.module('ClientService', []).factory('Client', ['$http', function($http) 
 
                 // these will work when more API routes are defined on the Node side of things
         // call to POST and create a new nerd
-        create : function(nerdData) {
+        create : function(clientData) {
             return $http.post('/api/clients', clientData);
         },
 

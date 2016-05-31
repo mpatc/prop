@@ -10,6 +10,7 @@ var ClientSchema = new Schema({
   name: {type: String, default: '', trim: true},
   email: {type: String, default: '', trim: true},
   phone: {type: String, default: '', trim: true},
+  homeless: {type: Boolean, default: false},
   created: {type: Date, default: Date.now},
   other: {type: String, default: '', trim: true},
   prop: {type: Schema.ObjectId, ref:'Prop'}

@@ -10,6 +10,7 @@ var PropSchema = new Schema({
   address: {type: String, default: '', trim: true},
   rent: {type: Number, default: '', trim: true},
   util: {type: Number, default: '', trim: true},
+  occ: {type: Boolean, default: false},
   created: {type: Date, default: Date.now},
   other: {type: String, default: '', trim: true},
   client: {type: Schema.ObjectId, ref:'Client'}

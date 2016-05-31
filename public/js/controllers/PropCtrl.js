@@ -3,6 +3,7 @@
 angular.module('PropCtrl', []).controller('PropController', function($scope) {
 
     $scope.tagline = 'To the moon and back!';
+    $scope.showtenent = false;
 
 });
 
